@@ -1,0 +1,14 @@
+									    COMPARISON OF THE RESULT USING NAMED & UNNAMED PIPES
+
+
+In named pipe case,which can be used in non relative processes "mkfifo" is used to create pipe and G1|G2 processes write through write end of file descriptors and R reads the messages from G1 and G2 using select() function.
+
+In unnamed pipe case,which cannot be used in non relative processes sprintf is used to send the read end and write end to the other process.here also select() function is used to read the messages from G1 and G2.fork() is used here to fork all the writer,reader and monitor process.
+
+Another, in named pipe we have multiple readers/writers which "do not need common ancestry", whereas in unnamed pipes we have single reader and writer.
+
+Named pipes allow the client software to open the pipe without actually being a process that is started from the process that owns the pipe.
+
+With a named pipe we can also connect from one machine to another (via some system level software that connects the machines together, of course). Since unnamed pipes can't be "found" from another machine, you couldn't use unnamed pipes for this purpose.
+
+So one immediately obvious task we cannot achieve with an unnamed pipe is a conventional client/server application. 

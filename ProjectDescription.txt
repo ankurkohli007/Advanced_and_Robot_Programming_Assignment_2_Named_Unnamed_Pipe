@@ -1,0 +1,33 @@
+									             NAMED PIPE & UNNAMED PIPE COMMUNICATION
+												
+
+ADAVNCE AND ROBOT PROGRAMMING
+Programmer: Aatheethyaa Dhanasekaran (5051520) Ankur Kohli (5160903)
+M.Sc Robotics Engineering
+University of Genoa (UniGe)
+Group: AA5
+Supervisor: Prof. Renato Ugo Raffaele Zaccaria & Prof. Simone Macciò
+
+ProjectDescription.txt file contains useful informations about the project.
+
+Inside the .zip archive are contained five files, three shell scripts the sources.zip archive and the this text file. In the sources archive you find 2 directories wich contain the .c file and also a .txt file with  informations about each process.
+
+First of all to unzip the sources archive and install the program using the command:
+
+source ./install.sh <pathname>
+
+It will create a folder called <pathname> inside which are located the folders that
+were in sources.zip, there will also be a folder with the executables of each process.
+
+After that run the program with the command:
+
+./run.sh
+
+This second assignment of ARP is deals with the G1 & G2 process which will communicate with R process using named pipe and unnamed pipe as well. Later, this R process will communicate with M process through both named pipe and unnamed pipe.
+
+The two programs are:
+
+1. named pipe
+2. unnamed pipe
+
+In case of named pipe G1 & G2 process communicates with R process using one named pipe between them. But in case of unnamed pipe G1 & G2 process communicates with R process using two unnamed pipe between them.
