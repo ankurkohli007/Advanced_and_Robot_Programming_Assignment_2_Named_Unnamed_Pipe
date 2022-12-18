@@ -43,6 +43,8 @@ average delay (latency) between generation and reception of messages (usec): xx 
 
 Communication between Gi and R, and R and M are made through **pipes (*)**.
 
-(*) write your program in two versions: 1. two unnamed pipes between Gi and R 2. one named pipe between Gi and R
+(*) write your program in two versions: 
+1. two unnamed pipes between Gi and R <br>
+2. 2. one named pipe between Gi and R
 
 
