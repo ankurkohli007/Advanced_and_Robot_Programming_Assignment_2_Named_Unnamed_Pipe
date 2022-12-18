@@ -37,10 +37,10 @@ This is simplified model simulates the generation of quasi-periodic messages by 
 
 **M** analyzes data and outputs the result of the form: 
 
-no. of G1|G2 cycles: xx <br>
+**no. of G1|G2 cycles: xx <br>
 no. of messages received: xx <br>
 offset delay in G1 | G2 cycles (usec): xx <br>
-average delay (latency) between generation and reception of messages (usec): xx estimated bandwidth between G and R (bit/s): xx <br>
+average delay (latency) between generation and reception of messages (usec): xx estimated bandwidth between G and R (bit/s): xx** <br>
 
 Communication between Gi and R, and R and M are made through **pipes (*)**.
 
@@ -54,6 +54,30 @@ The final aim of the assignment is to find, by means of practical experiments, t
 
 With the so determined offset value the student must derive an estimate of the throughput of R, as to say, the maximum bandwidth (in bytes/s) of the communication between the Gi and R.
 
+## Installation & Running ## 
+
+Inside the .zip archive are contained five files, three shell scripts the sources.zip archive and the this text file. In the sources archive you find 2 directories wich contain the .c file and also a .txt file with  informations about each process.
+
+First of all to unzip the sources archive and install the program using the command:
+
+```
+source ./install.sh <pathname>
+```
+
+It will create a folder called <pathname> inside which are located the folders that were in sources.zip, there will also be a folder with the executables of each process.
+
+After that run the program with the command:
+  
+```
+./run.sh
+```
+
+## Result
+  
+The final result is a quite fun way to compare the different IPC and here you can find the sorting in order of efficiency:
+
+* named pipes
+* unnamed pipes
 
 
 
