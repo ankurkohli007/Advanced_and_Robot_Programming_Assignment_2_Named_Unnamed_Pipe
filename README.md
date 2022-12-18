@@ -79,5 +79,3 @@ The final result is a quite fun way to compare the different IPC and here you ca
 * named pipes
 * unnamed pipes
 
-:spiral_notepad: 
-
