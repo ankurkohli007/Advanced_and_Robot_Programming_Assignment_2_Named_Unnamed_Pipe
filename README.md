@@ -6,3 +6,7 @@ Advanced and Robot Programming](https://corsi.unige.it/en/off.f/2022/ins/60228?c
 
 This second assignment of course Advance and Robot Programming and it deals with the two process **G1** & **G2**, which will communicate with **R** process using **named pipe** and **unnamed pipe** aprroach as well. Later, this **R** process will communicate with **M** process through both **named pipe** and **unnamed pipe**.
 
+![alt text](image1.png)
+
+
+
