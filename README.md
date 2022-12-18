@@ -7,6 +7,7 @@ Advanced and Robot Programming](https://corsi.unige.it/en/off.f/2022/ins/60228?c
 This second assignment of course Advance and Robot Programming and it deals with the two process **G1** & **G2**, which will communicate with **R** process using **named pipe** and **unnamed pipe** aprroach as well. Later, this **R** process will communicate with **M** process through both **named pipe** and **unnamed pipe**.
 
 Figure below shows the architecture the proposed assignment. 
+
 ![alt text](image1.png)
 
 **G1**, **G2** are processes that generate short messages composed by a time stamp, the process identifier, and a little datum identifying the message itself:
@@ -46,5 +47,13 @@ Communication between Gi and R, and R and M are made through **pipes (*)**.
 (*) write your program in two versions: 
 1. two unnamed pipes between Gi and R <br>
 2. 2. one named pipe between Gi and R
+
+In case of named pipe G1 & G2 process communicates with R process using one named pipe between them. But in case of unnamed pipe G1 & G2 process communicates with R process using two unnamed pipe between them.
+
+The final aim of the assignment is to find, by means of practical experiments, the *minimum offset value* such as *generators Gi are not **delayed** (or minimally delayed) by R’ execution*.
+
+With the so determined offset value the student must derive an estimate of the throughput of R, as to say, the maximum bandwidth (in bytes/s) of the communication between the Gi and R.
+
+
 
 
